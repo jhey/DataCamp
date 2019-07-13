@@ -13,6 +13,9 @@ Create a new DataFrame called weather by concatenating the DataFrames weather_ma
 Pass the DataFrames to pd.concat() as a list and specify the keyword argument axis=1 to stack them horizontally.
 Print the new DataFrame weather.
 '''
+# Create a list of weather_max and weather_mean
+weather_list = [weather_max, weather_mean]
+
 # Concatenate weather_max and weather_mean horizontally: weather
 weather = pd.concat([weather_max, weather_mean], axis=1)
 
